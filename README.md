@@ -1,5 +1,5 @@
 # Souvenir Scent
-Souvenir Scent is a [#VersusVirus Hackathon](https://versusvirus.ch/) Project
+[Souvenir Scent](http://souvernirscent.ch/) is a [#VersusVirus Hackathon](https://versusvirus.ch/) Project
 
 ## Challenge
 > [Virtual Tourism](https://airtable.com/shrh5sZgihl4otzgQ/tbl6sM6awYPMu9XbC/viwmAhTo2VVbreodF/rec8zsRYP3fLBmaWM?blocks=hide) - It is not possible to travel, the industry is suffering and it probably will last a long time; people need distractions.
