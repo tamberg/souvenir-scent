@@ -2,10 +2,10 @@
 Souvenir Scent is a #VersusVirus Hackday Project
 
 ## Challenge
-> Virtual Travel - It is not possible to travel, tourism specialits are suffering and it probably will last a long period; people need to have distractions.
+> [Virtual Travel](https://airtable.com/shrh5sZgihl4otzgQ/tbl6sM6awYPMu9XbC/viwmAhTo2VVbreodF/rec8zsRYP3fLBmaWM?blocks=hide) - It is not possible to travel, tourism specialits are suffering and it probably will last a long period; people need to have distractions.
 
 ## Team
-Laura, Gabriela, Christophe and @tamberg
+Laura, Gabriela, Christophe and [@tamberg](https://twitter.com/tamberg)
 
 ## Idea
 Virtually visit any place, get its scent as a souvenir.
