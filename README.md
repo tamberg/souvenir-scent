@@ -12,6 +12,9 @@ Laura, Gabriela, Christophe and [@tamberg](https://twitter.com/tamberg).
 - Meet locals or other visitors.
 - Get a typical scent as a souvenir.
 
+## Run
+```$ python -m SimpleHTTPServer 8080```
+
 ## License
 - 3D models are licensed [CC BY-SA](https://creativecommons.org/licenses/by-sa/4.0/) G. Chicherio.
 - Photos are licensed [CC BY-NC-ND](https://creativecommons.org/) Flickr users.
