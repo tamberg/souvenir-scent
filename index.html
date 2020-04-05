@@ -11,55 +11,63 @@
     a { color: #DDDDDD; }
     body { margin: 0; padding: 0; background-color: black; }
     h1, p { font-family: 'Georgia, serif'; color: #DDDDDD; }
-    p { font-size: x-large; }
-    #map { position:absolute; top: 0; bottom: 0; width: 60%; }
-    .place { position:absolute; top: 0; bottom: 0; left: 60%; width: 40%; padding-left: 16px; }
+    p { font-size: 1.4em; }
+    #map { position: absolute; top: 0; bottom: 0; width: 60%; height: 100%; }
+    .place { position: absolute; top: 0; bottom: 0; left: 60%; width: 40%; padding-left: 16px; }
+    .mood { width: 80%; }
+    .thing { height: 18%; }
+    .arrow { height: 4%; margin-left: 2%; margin-right: 2%; margin-bottom: 10%; opacity: 0.9; }
+    .scent { height: 18%; }
 </style>
 </head>
 <body>
 
 <div id='map'></div>
 
-<div id='berlin' class='place' style='visibility: hidden;'><h1>Souvenir Scent from Berlin</h1>
-    <img src="https://live.staticflickr.com/65535/49249122618_7e70ddc486_z.jpg" width="80%" title="Bratwurst, Foto CC BY-NC Ian Britton, Flickr.com" />
+<div style="z-index: 23; position: relative; float:right; margin-top: 24px; margin-right: 16px;"><a href="https://github.com/tamberg/souvenir-scent"><img src="github.ico" border="0"></a></div>
+
+<div id='berlin' class='place' style='visibility: hidden;'><h1>Souvenir Scent &dash; Berlin</h1>
+    <img class='mood' src="https://live.staticflickr.com/65535/49249122618_7e70ddc486_z.jpg" title="Bratwurst, Foto CC BY-NC Ian Britton, Flickr.com" />
     <p><a href="https://meet.jit.si/berlin" target="_blank">Give or take a tour in Berlin</a> on the local Jitsi.</p>
-    <img src="https://live.staticflickr.com/65535/49735748937_2ee96ed55e_z.jpg" width="60%" title="Water Scent Molecule, Foto CC BY-SA tamberg.org, Flickr.com"/>
-    <p><a href="" target="_blank">Download the scent of Berlin</a> to 3D print at home.</p>
+    <img class='thing' src="https://live.staticflickr.com/4071/4365251303_e4127dc328_z.jpg" title="Curry-Wurst, Foto CC BY-NC-ND mompl, Flickr.com"/><img class='arrow' src="arrow.png"/><img class='scent' src="https://live.staticflickr.com/65535/49735748937_2ee96ed55e_z.jpg" title="Water Scent Molecule, Foto CC BY-SA tamberg.org, Flickr.com"/>
+    <p><a href="">Download the scent of Berlin</a> to 3D print at home.</p>
+    <p><a href="">Learn more about the science</a> of Currywurst scent.</p>
+    <p><a href="https://de.aliexpress.com/wholesale?SearchText=berlin+souvenir">Order a souvenir scent</a> to match your molecule.</p>
 </div>
 
 <div id='madrid' class='place' style='visibility: hidden;'><h1>Souvenir Scent from Madrid</h1>
-    <img src="https://live.staticflickr.com/1920/44534276014_3dfeeb5324_z.jpg" width="80%" title="CC BY-NC-ND simplethrill, Flickr.com" />
+    <img class='mood' src="https://live.staticflickr.com/1920/44534276014_3dfeeb5324_z.jpg" title="CC BY-NC-ND simplethrill, Flickr.com" />
     <!--<img src="https://live.staticflickr.com/8192/8150335308_f7704fa697_z.jpg" width="80%" title="CC BY-NC-ND Michael Hirst, Flickr.com" />-->
     <p><a href="https://meet.jit.si/madrid" target="_blank">Give or take a tour in Madrid</a> on the local Jitsi.</p>
-    <img src="https://live.staticflickr.com/65535/49735748937_2ee96ed55e_z.jpg" width="60%" title="Water Scent Molecule, Foto CC BY-SA tamberg.org, Flickr.com"/>
+    <img class='scent' src="https://live.staticflickr.com/65535/49735748937_2ee96ed55e_z.jpg" title="Water Scent Molecule, Foto CC BY-SA tamberg.org, Flickr.com"/>
     <p><a href="" target="_blank">Download the scent of Madrid</a> to 3D print at home.</p>
 </div>
 
 <div id='paris' class='place' style='visibility: hidden;'><h1>Souvenir Scent from Paris</h1>
-    <img src="https://live.staticflickr.com/3929/33951285506_b51c267e81_z.jpg" width="80%" title="CC BY-NC-ND barnyz, Flickr.com" />
+    <img class='mood' src="https://live.staticflickr.com/3929/33951285506_b51c267e81_z.jpg" title="CC BY-NC-ND barnyz, Flickr.com" />
     <p><a href="https://meet.jit.si/paris" target="_blank">Give or take a tour in Paris</a> on the local Jitsi.</p>
-    <img src="https://live.staticflickr.com/65535/49735748937_2ee96ed55e_z.jpg" width="60%" title="Water Scent Molecule, Foto CC BY-SA tamberg.org, Flickr.com"/>
+    <img class='scent' src="https://live.staticflickr.com/65535/49735748937_2ee96ed55e_z.jpg" title="Water Scent Molecule, Foto CC BY-SA tamberg.org, Flickr.com"/>
     <p><a href="" target="_blank">Download the scent of Paris</a> to 3D print at home.</p>
 </div>
 
 <div id='rome' class='place' style='visibility: hidden;'><h1>Souvenir Scent from Rome</h1>
-    <img src="https://live.staticflickr.com/1025/4595942497_76b82906a3_z.jpg" width="80%" title="CC BY Sakena, Flickr.com" />
+    <img class='mood' src="https://live.staticflickr.com/1025/4595942497_76b82906a3_z.jpg" title="CC BY Sakena, Flickr.com" />
     <p><a href="https://meet.jit.si/rome" target="_blank">Give or take in Rome</a> on the local Jitsi.</p>
-    <img src="https://live.staticflickr.com/65535/49735748937_2ee96ed55e_z.jpg" width="60%" title="Water Scent Molecule, Foto CC BY-SA tamberg.org, Flickr.com"/>
+    <img class='scent' src="https://live.staticflickr.com/65535/49735748937_2ee96ed55e_z.jpg" title="Water Scent Molecule, Foto CC BY-SA tamberg.org, Flickr.com"/>
     <p><a href="" target="_blank">Download the scent of Rome</a> to 3D print at home.</p>
 </div>
 
 <div id='tallin' class='place' style='visibility: hidden;'><h1>Souvenir Scent from Tallin</h1>
-    <img src="https://live.staticflickr.com/8608/29943076124_5fede9a119_z.jpg" width="80%" title="CC BY-NC-ND carlos4ar, Flickr.com" />
+    <img class='mood' src="https://live.staticflickr.com/8608/29943076124_5fede9a119_z.jpg" title="CC BY-NC-ND carlos4ar, Flickr.com" />
     <p><a href="https://meet.jit.si/tallin" target="_blank">Give or take tour in Tallin</a> on the local Jitsi.</p>
-    <img src="https://live.staticflickr.com/65535/49735748937_2ee96ed55e_z.jpg" width="60%" title="Water Scent Molecule, Foto CC BY-SA tamberg.org, Flickr.com"/>
+    <img class='scent' src="https://live.staticflickr.com/65535/49735748937_2ee96ed55e_z.jpg" title="Water Scent Molecule, Foto CC BY-SA tamberg.org, Flickr.com"/>
     <p><a href="" target="_blank">Download the scent of Tallin</a> to 3D print at home.</p>
 </div>
 
 <div id='zurich' class='place' style='visibility: visible;'><h1>Souvenir Scent from Zurich</h1>
-    <img src="https://farm5.staticflickr.com/4046/4681369986_55851fd15c_z.jpg" width="80%" title="Limmat River, Foto CC BY-NC-ND yago1.com, Flickr.com" />
+    <img class='mood' src="https://farm5.staticflickr.com/4046/4681369986_55851fd15c_z.jpg" title="Limmat River, Foto CC BY-NC-ND yago1.com, Flickr.com" />
     <p><a href="https://meet.jit.si/zurich" target="_blank">Give or take a tour in Zurich</a> on the local Jitsi.</p>
-    <img src="https://live.staticflickr.com/65535/49735748937_2ee96ed55e_z.jpg" width="60%" title="Water Scent Molecule, Foto CC BY-SA tamberg.org, Flickr.com"/>
+    <img class='scent' src="https://live.staticflickr.com/65535/49735748937_2ee96ed55e_z.jpg" title="Water Scent Molecule, Foto CC BY-SA tamberg.org, Flickr.com"/>
     <p><a href="https://www.thingiverse.com/thing:1619576/files" target="_blank">Download the scent of Zurich</a> to 3D print at home.</p>
 </div>
 
