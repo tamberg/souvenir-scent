@@ -8,8 +8,28 @@
 Laura, Gabriela, Christophe and [@tamberg](https://twitter.com/tamberg).
 
 ## Idea
-Virtually visit any place, get its scent as a souvenir.
+- Virtually visit a place.
+- Meet locals or other visitors.
+- Get a typical scent as a souvenir.
+
+## Website
+- Visit http://souvenirscent.ch/
+
+## How it's built
+- Static HTML, CSS, Javascript
+- Domain from [Gandi.net](http://gandi.net/)
+- Hosted on [AWS S3](https://docs.aws.amazon.com/AmazonS3/latest/dev/WebsiteHosting.html)
+
+## Run it on your machine
+- Type this in a terminal
+```
+$ git clone https://github.com/tamberg/souvenir-scent
+$ cd souvenir-scent
+$ python -m SimpleHTTPServer 8080 # or any other web server
+```
+- Visit http://127.0.0.1:8080/
 
 ## License
-- 3D models are licensed [CC BY-SA](https://creativecommons.org/licenses/by-sa/4.0/), G. Chicherio
-- Source code is licensed under the [MIT license](https://tamberg.mit-license.org/)
+- 3D models are licensed [CC BY-SA](https://creativecommons.org/licenses/by-sa/4.0/) G. Chicherio.
+- Photos are licensed [CC BY-NC-ND](https://creativecommons.org/) Flickr users.
+- Source code is licensed under the [MIT license](https://tamberg.mit-license.org/).
