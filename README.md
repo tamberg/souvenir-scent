@@ -11,6 +11,6 @@ Laura, Gabriela, Christophe and [@tamberg](https://twitter.com/tamberg).
 Virtually visit any place, get its scent as a souvenir.
 
 ## License
-- 3D models are licensed [CC BY-SA](https://creativecommons.org/licenses/by-sa/4.0/), G. Chicherio
+- 3D models are licensed [CC BY-SA](https://creativecommons.org/licenses/by-sa/4.0/) G. Chicherio
 - Photos are licensed [CC BY-NC-ND](https://creativecommons.org/) Flickr users.
 - Source code is licensed under the [MIT license](https://tamberg.mit-license.org/)
