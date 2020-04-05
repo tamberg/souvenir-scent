@@ -16,7 +16,7 @@ Laura, Gabriela, Christophe and [@tamberg](https://twitter.com/tamberg).
 - Visit http://souvenirscent.ch/
 
 ## Molecules
-
+<img src="49735748937_2ee96ed55e_z.jpg" width="640"/>
 
 ## How it's built
 - Static HTML, CSS, Javascript
