@@ -20,7 +20,7 @@ Laura, Gabriela, Christophe and [@tamberg](https://twitter.com/tamberg).
 - Domain from [Gandi.net](http://gandi.net/)
 - Hosted on [AWS S3](https://docs.aws.amazon.com/AmazonS3/latest/dev/WebsiteHosting.html)
 
-## Run it on your local machine
+## Run it on your machine
 - Type this in a terminal
 ```
 $ git clone https://github.com/tamberg/souvenir-scent
