@@ -18,7 +18,7 @@ Laura, Gabriela, Christophe and [@tamberg](https://twitter.com/tamberg).
 ## How it's built
 - Static HTML, CSS, Javascript
 - Domain from [Gandi.net](http://gandi.net/)
-- [Hosted on AWS S3](https://docs.aws.amazon.com/AmazonS3/latest/dev/WebsiteHosting.html)
+- Hosted on [AWS S3](https://docs.aws.amazon.com/AmazonS3/latest/dev/WebsiteHosting.html)
 
 ## Run it on your local machine
 - Type this in a terminal
