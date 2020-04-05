@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<!-- https://tamberg.mit-license.org/ based on https://docs.mapbox.com/mapbox.js/example/v1.0.0/disable-zooming-panning/ -->
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Souvenir Scent #VersusVirus</title>
+<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+<script src='https://api.mapbox.com/mapbox.js/v3.3.0/mapbox.js'></script>
+<link href='https://api.mapbox.com/mapbox.js/v3.3.0/mapbox.css' rel='stylesheet' />
+<style>
+    a { color: #DDDDDD; }
+    body { margin: 0; padding: 0; background-color: black; }
+    h1, p { font-family: 'Georgia, serif'; color: #DDDDDD; }
+    p { font-size: x-large; }
+    #map { position:absolute; top: 0; bottom: 0; width: 60%; }
+    .place { position:absolute; top: 0; bottom: 0; left: 60%; width: 40%; padding-left: 16px; }
+</style>
+</head>
+<body>
+
+<div id='map'></div>
+
+<div id='berlin' class='place' style='visibility: hidden;'><h1>Souvenir Scent from Berlin</h1>
+    <img src="https://live.staticflickr.com/65535/49249122618_7e70ddc486_z.jpg" width="80%" title="Bratwurst, Foto CC BY-NC Ian Britton, Flickr.com" />
+    <p><a href="https://meet.jit.si/berlin" target="_blank">Give or take a tour in Berlin</a> on the local Jitsi.</p>
+    <img src="https://live.staticflickr.com/65535/49735748937_2ee96ed55e_z.jpg" width="60%" title="Water Scent Molecule, Foto CC BY-SA tamberg.org, Flickr.com"/>
+    <p><a href="" target="_blank">Download the scent of Berlin</a> to 3D print at home.</p>
+</div>
+
+<div id='madrid' class='place' style='visibility: hidden;'><h1>Souvenir Scent from Madrid</h1>
+    <img src="https://live.staticflickr.com/1920/44534276014_3dfeeb5324_z.jpg" width="80%" title="CC BY-NC-ND simplethrill, Flickr.com" />
+    <!--<img src="https://live.staticflickr.com/8192/8150335308_f7704fa697_z.jpg" width="80%" title="CC BY-NC-ND Michael Hirst, Flickr.com" />-->
+    <p><a href="https://meet.jit.si/madrid" target="_blank">Give or take a tour in Madrid</a> on the local Jitsi.</p>
+    <img src="https://live.staticflickr.com/65535/49735748937_2ee96ed55e_z.jpg" width="60%" title="Water Scent Molecule, Foto CC BY-SA tamberg.org, Flickr.com"/>
+    <p><a href="" target="_blank">Download the scent of Madrid</a> to 3D print at home.</p>
+</div>
+
+<div id='paris' class='place' style='visibility: hidden;'><h1>Souvenir Scent from Paris</h1>
+    <img src="https://live.staticflickr.com/3929/33951285506_b51c267e81_z.jpg" width="80%" title="CC BY-NC-ND barnyz, Flickr.com" />
+    <p><a href="https://meet.jit.si/paris" target="_blank">Give or take a tour in Paris</a> on the local Jitsi.</p>
+    <img src="https://live.staticflickr.com/65535/49735748937_2ee96ed55e_z.jpg" width="60%" title="Water Scent Molecule, Foto CC BY-SA tamberg.org, Flickr.com"/>
+    <p><a href="" target="_blank">Download the scent of Paris</a> to 3D print at home.</p>
+</div>
+
+<div id='rome' class='place' style='visibility: hidden;'><h1>Souvenir Scent from Rome</h1>
+    <img src="https://live.staticflickr.com/1025/4595942497_76b82906a3_z.jpg" width="80%" title="CC BY Sakena, Flickr.com" />
+    <p><a href="https://meet.jit.si/rome" target="_blank">Give or take in Rome</a> on the local Jitsi.</p>
+    <img src="https://live.staticflickr.com/65535/49735748937_2ee96ed55e_z.jpg" width="60%" title="Water Scent Molecule, Foto CC BY-SA tamberg.org, Flickr.com"/>
+    <p><a href="" target="_blank">Download the scent of Rome</a> to 3D print at home.</p>
+</div>
+
+<div id='tallin' class='place' style='visibility: hidden;'><h1>Souvenir Scent from Tallin</h1>
+    <img src="https://live.staticflickr.com/8608/29943076124_5fede9a119_z.jpg" width="80%" title="CC BY-NC-ND carlos4ar, Flickr.com" />
+    <p><a href="https://meet.jit.si/tallin" target="_blank">Give or take tour in Tallin</a> on the local Jitsi.</p>
+    <img src="https://live.staticflickr.com/65535/49735748937_2ee96ed55e_z.jpg" width="60%" title="Water Scent Molecule, Foto CC BY-SA tamberg.org, Flickr.com"/>
+    <p><a href="" target="_blank">Download the scent of Tallin</a> to 3D print at home.</p>
+</div>
+
+<div id='zurich' class='place' style='visibility: visible;'><h1>Souvenir Scent from Zurich</h1>
+    <img src="https://farm5.staticflickr.com/4046/4681369986_55851fd15c_z.jpg" width="80%" title="Limmat River, Foto CC BY-NC-ND yago1.com, Flickr.com" />
+    <p><a href="https://meet.jit.si/zurich" target="_blank">Give or take a tour in Zurich</a> on the local Jitsi.</p>
+    <img src="https://live.staticflickr.com/65535/49735748937_2ee96ed55e_z.jpg" width="60%" title="Water Scent Molecule, Foto CC BY-SA tamberg.org, Flickr.com"/>
+    <p><a href="https://www.thingiverse.com/thing:1619576/files" target="_blank">Download the scent of Zurich</a> to 3D print at home.</p>
+</div>
+
+<script>
+L.mapbox.accessToken = 'pk.eyJ1IjoidGFtYmVyZyIsImEiOiJjaXlyNjcyMDUwMDByMzNsbHBxN3drbGlzIn0.eKPAcZ4tpRv2DwkTKxs6xw';
+var map = L.mapbox.map('map', null, { zoomControl: false })
+  .setView([51.5, 9.5], 5)
+  .addLayer(L.mapbox.styleLayer('mapbox://styles/mapbox/streets-v9'));
+
+// Disable drag and zoom handlers.
+//map.dragging.disable();
+map.touchZoom.disable();
+map.doubleClickZoom.disable();
+map.scrollWheelZoom.disable();
+map.keyboard.disable();
+
+// Disable tap handler, if present.
+if (map.tap) map.tap.disable();
+
+var blueIcon = L.icon({
+    iconUrl: 'marker-icon-2x-blue.png'
+});
+
+var redIcon = L.icon({
+    iconUrl: 'marker-icon-2x-red.png'
+});
+
+var berlinMarker = L.marker([52.5069704,13.2846498]).addTo(map);
+berlinMarker.addEventListener('click', () => { 
+      lastMarker.setIcon(blueIcon);
+      lastMarker = berlinMarker;
+      berlinMarker.setIcon(redIcon);
+
+      lastPlace.style.visibility = 'hidden';
+      lastPlace = berlinPlace;
+      berlinPlace.style.visibility = 'visible';
+   }
+);
+
+var madridMarker = L.marker([40.4381311,-3.8196201]).addTo(map);
+madridMarker.addEventListener('click', () => { 
+      lastMarker.setIcon(blueIcon);
+      lastMarker = madridMarker;
+      madridMarker.setIcon(redIcon);
+
+      lastPlace.style.visibility = 'hidden';
+      lastPlace = madridPlace;
+      madridPlace.style.visibility = 'visible';
+   }
+);
+
+var parisMarker = L.marker([48.8589507, 2.2770204]).addTo(map);
+parisMarker.addEventListener('click', () => { 
+      lastMarker.setIcon(blueIcon);
+      lastMarker = parisMarker;
+      parisMarker.setIcon(redIcon);
+
+      lastPlace.style.visibility = 'hidden';
+      lastPlace = parisPlace;
+      parisPlace.style.visibility = 'visible';
+   }
+);
+
+var romeMarker = L.marker([41.9102415, 12.3959147]).addTo(map);
+romeMarker.addEventListener('click', () => { 
+      lastMarker.setIcon(blueIcon);
+      lastMarker = romeMarker;
+      romeMarker.setIcon(redIcon);
+
+      lastPlace.style.visibility = 'hidden';
+      lastPlace = romePlace;
+      romePlace.style.visibility = 'visible';
+   }
+);
+
+var tallinMarker = L.marker([59.4717925,24.5981604]).addTo(map);
+tallinMarker.addEventListener('click', () => { 
+      //alert("Tallin Marker Clicked.");
+      lastMarker.setIcon(blueIcon);
+      lastMarker = tallinMarker;
+      tallinMarker.setIcon(redIcon);
+
+      lastPlace.style.visibility = 'hidden';
+      lastPlace = tallinPlace;
+      tallinPlace.style.visibility = 'visible';
+   }
+);
+
+var zurichMarker = L.marker([47.38495104535926, 8.520840780006921]).addTo(map);
+zurichMarker.addEventListener('click', () => { 
+      //alert("Zurich Marker Clicked.");
+      lastMarker.setIcon(blueIcon);
+      lastMarker = zurichMarker;
+      zurichMarker.setIcon(redIcon);
+
+      lastPlace.style.visibility = 'hidden';
+      lastPlace = zurichPlace;
+      zurichPlace.style.visibility = 'visible';
+   }
+);
+
+var berlinPlace = document.getElementById('berlin');
+var madridPlace = document.getElementById('madrid');
+var parisPlace = document.getElementById('paris');
+var romePlace = document.getElementById('rome');
+var tallinPlace = document.getElementById('tallin');
+var zurichPlace = document.getElementById('zurich');
+
+zurichMarker.setIcon(redIcon);
+var lastMarker = zurichMarker;
+var lastPlace = zurichPlace;
+</script>
+</body>
+</html>
