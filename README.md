@@ -15,6 +15,9 @@ Laura, Gabriela, Christophe and [@tamberg](https://twitter.com/tamberg).
 ## Website
 - Visit http://souvenirscent.ch/
 
+## Molecules
+
+
 ## How it's built
 - Static HTML, CSS, Javascript
 - Maps made with [Mapbox](https://www.mapbox.com/)
@@ -23,11 +26,12 @@ Laura, Gabriela, Christophe and [@tamberg](https://twitter.com/tamberg).
 
 ## Run it on your machine
 - Type this in a terminal
-```
-$ git clone https://github.com/tamberg/souvenir-scent
-$ cd souvenir-scent
-$ python -m SimpleHTTPServer 8080 # or any other web server
-```
+    ```
+    $ git clone https://github.com/tamberg/souvenir-scent
+    $ cd souvenir-scent
+    $ python -m SimpleHTTPServer 8080 # or any other web server
+    ```
+
 - Visit http://127.0.0.1:8080/
 
 ## License
