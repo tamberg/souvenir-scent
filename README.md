@@ -16,7 +16,7 @@ Laura, Gabriela, Christophe and [@tamberg](https://twitter.com/tamberg).
 - Visit http://souvenirscent.ch/
 
 ## How it's built
-- HTML, CSS, Javascript in index.html
+- Static HTML, CSS, Javascript
 - Domain from [Gandi.net](http://gandi.net/)
 - [Hosted on AWS S3](https://docs.aws.amazon.com/AmazonS3/latest/dev/WebsiteHosting.html)
 
