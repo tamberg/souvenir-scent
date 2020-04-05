@@ -14,76 +14,100 @@
     p { font-size: 1.4em; }
     #map { position: absolute; top: 0; bottom: 0; width: 60%; height: 100%; }
     .place { position: absolute; top: 0; bottom: 0; left: 60%; width: 40%; padding-left: 16px; }
-    .mood { width: 80%; }
+    .mood { width: 80%; margin-top: 16px;}
     .thing { height: 18%; }
-    .arrow { height: 4%; margin-left: 2%; margin-right: 2%; margin-bottom: 10%; opacity: 0.9; }
+    .arrow { height: 4%; margin-left: 6%; margin-right: 2%; margin-bottom: 10%; opacity: 0.9; }
     .scent { height: 18%; }
+    .more { font-size: large; }
 </style>
 </head>
 <body>
 
 <div id='map'></div>
 
+<div style="z-index: 23; position: relative; float:left; margin-top: 16px; margin-left: 16px;"><img src="logo.png" border="0" width="60%" style="opacity: 0.8"></div>
+
 <div style="z-index: 23; position: relative; float:right; margin-top: 25px; margin-right: 16px;"><a href="https://github.com/tamberg/souvenir-scent" target="_blank"><img src="github.ico" border="0"></a></div>
 
-<div id='berlin' class='place' style='visibility: hidden;'><h1>Souvenir Scent &dash; Berlin</h1>
-    <img class='mood' src="49249122618_7e70ddc486_z.jpg" title="Bratwurst, Foto CC BY-NC Ian Britton, Flickr.com" />
+<div id='berlin' class='place' style='visibility: hidden;'>
+    <img class='mood' id='mood-berlin' src="49249122618_7e70ddc486_z.jpg" title="Bratwurst, Photo CC BY-NC Ian Britton, Flickr.com" />
+    <h1>Berlin</h1>
     <p><a href="https://meet.jit.si/berlin" target="_blank">Give or take a tour in Berlin</a> on the local Jitsi.</p>
-    <img class='thing' src="4365251303_e4127dc328_z.jpg" title="Curry-Wurst, Foto CC BY-NC-ND mompl, Flickr.com"/><img class='arrow' src="arrow.png"/><img class='scent' src="https://live.staticflickr.com/65535/49735748937_2ee96ed55e_z.jpg" title="Currywurst Scent Molecule, Foto CC BY-SA tamberg.org, Flickr.com"/>
+    <img class='thing' src="4365251303_e4127dc328_z.jpg" title="Curry-Wurst, Photo CC BY-NC-ND mompl, Flickr.com"/><img class='arrow' src="arrow.png"/><img class='scent' src="sausage-scent.jpg" title="Currywurst Scent Molecule, Design CC BY-SA G. Chicherio"/>
     <p><a href="">Download the scent of Berlin</a> to 3D print at home.</p>
-    <p><a href="">Learn more about the science</a> of currywurst scent.</p>
     <p><a href="https://de.aliexpress.com/wholesale?SearchText=berlin+souvenir" target="_blank">Order a souvenir scent</a> to match your molecule.</p>
+    <p><a href="#" onclick="toggle('science-berlin', 'mood-berlin');">Learn more</a> about the science of currywurst scent.</p>
+    <p class="science" id="science-berlin" style="display:none">"The distinct smell of dry-cured sausages comes from a lot of different chemical compounds that by itself might give of a sweet, pineapple or rose aroma, but in combination produce the fatty, spicy and cured smell we love. Hexanoic acid is one of the main compounds found in cured sausage and as it comes from animal fats." &dash; Source: Corral et al. 2014<br/><br/><a href="/">Souvenir Scent</a> is a <a href="https://versusvirus.ch/">#VersusVirus Hackathon</a> project about virtual tourism by Laura, Gabriela, Christophe & <a href="https://twitter.com/tamberg">@tamberg</a>.</p>
 </div>
 
-<div id='madrid' class='place' style='visibility: hidden;'><h1>Souvenir Scent &dash; Madrid</h1>
-    <img class='mood' src="44534276014_3dfeeb5324_z.jpg" title="CC BY-NC-ND simplethrill, Flickr.com" />
-    <!--<img src="https://live.staticflickr.com/8192/8150335308_f7704fa697_z.jpg" width="80%" title="CC BY-NC-ND Michael Hirst, Flickr.com" />-->
+<div id='madrid' class='place' style='visibility: hidden;'>
+    <img class='mood' id='mood-madrid' src="44534276014_3dfeeb5324_z.jpg" title="CC BY-NC-ND simplethrill, Flickr.com" />
+    <h1>Madrid</h1>
     <p><a href="https://meet.jit.si/madrid" target="_blank">Give or take a tour in Madrid</a> on the local Jitsi.</p>
-    <img class='thing' src="3342764892_dc3955772c_b.jpg" title="Olive Tapas, Foto CC BY adactio, Flickr.com"/><img class='arrow' src="arrow.png"/><img class='scent' src="49735748937_2ee96ed55e_z.jpg" title="Olive Scent Molecule, Foto CC BY-SA tamberg.org, Flickr.com"/>
-    <p><a href="">Download the scent of Madrid</a> to 3D print at home.</p>
-    <p><a href="">Learn more about the science</a> of the olive scent.</p>
+    <img class='thing' src="3342764892_dc3955772c_b.jpg" title="Olive Tapas, Photo CC BY adactio, Flickr.com"/><img class='arrow' src="arrow.png"/><img class='scent' src="olive-scent.jpg" title="Olive Scent Molecule, Design CC BY-SA G. Chicherio"/><!-- it's a component of bread, not olive scent yet, sorry -->
+    <p><a href="olive-scent.stl">Download the scent of Madrid</a> to 3D print at home.</p>
     <p><a href="https://de.aliexpress.com/wholesale?SearchText=madrid+souvenir" target="_blank">Order a souvenir scent</a> to match your molecule.</p>
+    <p><a href="#" onclick="toggle('science-madrid', 'mood-madrid');">Learn more</a> about the science of olive scent.</p>
+    <p class="science" id="science-madrid" style="display:none">"The aroma profile of olives becomes richer thanks to inoculation and fermentation. Alcohols, aldehydes, ketones, esters as well as acids make up the volatile organic compounds found in fermented olives. Some molecules that give olives its distinct scent are Ethyl acetate, 2-butanone and 2-pentanol." &dash; Sabatini et al. 2017<br/><br/><a href="/">Souvenir Scent</a> is a <a href="https://versusvirus.ch/">#VersusVirus Hackathon</a> project about virtual tourism by Laura, Gabriela, Christophe & <a href="https://twitter.com/tamberg">@tamberg</a>.</p>
 </div>
 
-<div id='paris' class='place' style='visibility: hidden;'><h1>Souvenir Scent &dash; Paris</h1>
-    <img class='mood' src="33951285506_b51c267e81_z.jpg" title="CC BY-NC-ND barnyz, Flickr.com" />
+<div id='paris' class='place' style='visibility: hidden;'>
+    <img class='mood' id='mood-paris' src="33951285506_b51c267e81_z.jpg" title="CC BY-NC-ND barnyz, Flickr.com" />
+    <h1>Paris</h1>
     <p><a href="https://meet.jit.si/paris" target="_blank">Give or take a tour in Paris</a> on the local Jitsi.</p>
-    <img class='thing' src="13050808543_a6d9fedd0b_z.jpg" title="Baguette, Foto CC BY-NC-ND Johannes Liez, Flickr.com"/><img class='arrow' src="arrow.png"/><img class='scent' src="https://live.staticflickr.com/65535/49735748937_2ee96ed55e_z.jpg" title="Baguette Scent Molecule, Foto CC BY-SA tamberg.org, Flickr.com"/>
-    <p><a href="">Download the scent of Paris</a> to 3D print at home.</p>
-    <p><a href="">Learn more about the science</a> of baguette scent.</p>
+    <img class='thing' src="13050808543_a6d9fedd0b_z.jpg" title="Baguette, Photo CC BY-NC-ND Johannes Liez, Flickr.com"/><img class='arrow' src="arrow.png"/><img class='scent' src="bread-scent.jpg" title="Baguette Scent Molecule, Design CC BY-SA G. Chicherio"/>
+    <p><a href="bread-scent.stl">Download the scent of Paris</a> to 3D print at home.</p>
     <p><a href="https://de.aliexpress.com/wholesale?SearchText=paris+souvenir" target="_blank">Order a souvenir scent</a> to match your molecule.</p>
-</div>
+    <p><a href="#" onclick="toggle('science-paris', 'mood-paris');">Learn more</a> about the science of baguette scent.</p>
+    <p class="science" id="science-paris" style="display:none">"The buttery smell from freshly baked bread comes from Acetoin and Diacetyl, molecules that naturally are produced by bacteria during the fermentation process. Sugars like Maltol give the bread after baking its typical bread crust smell and flavor." &dash; <a href="https://www.compoundchem.com/2016/01/20/bread-aroma/">Source</a><br/><br/><a href="/">Souvenir Scent</a> is a <a href="https://versusvirus.ch/">#VersusVirus Hackathon</a> project about virtual tourism by Laura, Gabriela, Christophe & <a href="https://twitter.com/tamberg">@tamberg</a>.</p>
+    </div>
 
-<div id='rome' class='place' style='visibility: hidden;'><h1>Souvenir Scent &dash; Rome</h1>
-    <img class='mood' src="4595942497_76b82906a3_z.jpg" title="CC BY Sakena, Flickr.com" />
+<div id='rome' class='place' style='visibility: hidden;'>
+    <img class='mood' id='mood-rome' src="4595942497_76b82906a3_z.jpg" title="CC BY Sakena, Flickr.com" />
+    <h1>Rome</h1>
     <p><a href="https://meet.jit.si/rome" target="_blank">Give or take a tour in Rome</a> on the local Jitsi.</p>
-    <img class='thing' src="5112809197_152d829763_z.jpg" title="Spaghetti Vongole, Foto CC BY naotakem, Flickr.com"/><img class='arrow' src="arrow.png"/><img class='scent' src="https://live.staticflickr.com/65535/49735748937_2ee96ed55e_z.jpg" title="Sea Scent Molecule, Foto CC BY-SA tamberg.org, Flickr.com"/>
-    <p><a href="">Download the scent of Rome</a> to 3D print at home.</p>
-    <p><a href="">Learn more about the science</a> of seafood scent.</p>
+    <img class='thing' src="5112809197_152d829763_z.jpg" title="Spaghetti Vongole, Photo CC BY naotakem, Flickr.com"/><img class='arrow' src="arrow.png"/><img class='scent' src="sea-scent.jpg" title="Sea Scent Molecule, Design CC BY-SA G. Chicherio"/>
+    <p><a href="sea-scent.stl">Download the scent of Rome</a> to 3D print at home.</p>
     <p><a href="https://de.aliexpress.com/wholesale?SearchText=rome+souvenir" target="_blank">Order a souvenir scent</a> to match your molecule.</p>
+    <p><a href="#" onclick="toggle('science-rome', 'mood-rome');">Learn more</a> about the science of seafood scent.</p>
+    <p class="science" id="science-rome" style="display:none">"The smell of the Sea comes from volatile organic compounds that contain Sulphur. These compounds are produced by decomposing seaweed, like Hydrogen Sulfide or Dimethylsulfoniopropionate, which is a compound found in algae cells, when broken down by bacteria creates DMS, which is a major component of the sea smell." &dash; <a href="https://www.compoundchem.com/2014/07/18/the-chemical-compounds-behind-the-scent-of-the-sea/">Source</a><br/><br/><a href="/">Souvenir Scent</a> is a <a href="https://versusvirus.ch/">#VersusVirus Hackathon</a> project about virtual tourism by Laura, Gabriela, Christophe & <a href="https://twitter.com/tamberg">@tamberg</a>.</p>
 </div>
 
-<!--https://live.staticflickr.com/2857/10651526745_5c3d717863_z.jpg trees-->
-
-<div id='tallin' class='place' style='visibility: hidden;'><h1>Souvenir Scent &dash; Tallin</h1>
-    <img class='mood' src="32733518677_ee7b4c7e8f_z.jpg" title="CC BY Jorge Franganillo, Flickr.com" />
+<div id='tallin' class='place' style='visibility: hidden;'>
+    <img class='mood' id='mood-tallin' src="32733518677_ee7b4c7e8f_z.jpg" title="CC BY Jorge Franganillo, Flickr.com" />
+    <h1>Tallin</h1>
     <p><a href="https://meet.jit.si/tallin" target="_blank">Give or take tour in Tallin</a> on the local Jitsi.</p>
-    <img class='thing' src="10651526745_5c3d717863_z.jpg" title="Trees, Foto CC BY-SA Tanel Teemusk, Flickr.com"/><img class='arrow' src="arrow.png"/><img class='scent' src="https://live.staticflickr.com/65535/49735748937_2ee96ed55e_z.jpg" title="Pine Wood Scent Molecule, Foto CC BY-SA tamberg.org, Flickr.com"/>
-    <p><a href="">Download the scent of Tallin</a> to 3D print at home.</p>
-    <p><a href="">Learn more about the science</a> of pine wood scent.</p>
+    <img class='thing' src="10651526745_5c3d717863_z.jpg" title="Trees, Photo CC BY-SA Tanel Teemusk, Flickr.com"/><img class='arrow' src="arrow.png"/><img class='scent' src="forest-scent.jpg" title="Forest Scent Molecule, Photo CC BY-SA tamberg.org, Flickr.com"/>
+    <p><a href="forest-scent.stl">Download the scent of Tallin</a> to 3D print at home.</p>
     <p><a href="https://de.aliexpress.com/wholesale?SearchText=tallin+souvenir" target="_blank">Order a souvenir scent</a> to match your molecule.</p>
+    <p><a href="#" onclick="toggle('science-tallin', 'mood-tallin');">Learn more</a> about the science of forest scent.</p>
+    <p class="science" id="science-tallin" style="display:none">"A forest smell can be described by the smell of trees. Trees produce terpenes (alpha-pinene) and oils (bornyl acetate) to protect themselves - these compounds are volatile and have normally a strong odor and give the tree its distinct scentl. Bornyl acetate gives a pine forest its distinct scent." &dash; <a href="https://www.compoundchem.com/2014/12/19/christmastrees/">Source</a><br/><br/><a href="/">Souvenir Scent</a> is a <a href="https://versusvirus.ch/">#VersusVirus Hackathon</a> project about virtual tourism by Laura, Gabriela, Christophe & <a href="https://twitter.com/tamberg">@tamberg</a>.</p>
 </div>
 
-<div id='zurich' class='place' style='visibility: visible;'><h1>Souvenir Scent &dash; Zurich</h1>
-    <img class='mood' src="4681369986_55851fd15c_z.jpg" title="Limmat River, Foto CC BY-NC-ND yago1.com, Flickr.com" />
-    <p><a href="https://meet.jit.si/zurich" target="_blank">Give or take a tour in Zurich</a> on the local Jitsi.</p>
-   <img class='thing' src="3158989615_ec54b532b3_c.jpg" title="Fondue, Foto CC BY-NC u m a m i, Flickr.com"/><img class='arrow' src="arrow.png"/><img class='scent' src="49735748937_2ee96ed55e_z.jpg" title="Scent Molecule, Foto CC BY-SA tamberg.org, Flickr.com"/>
-    <p><a href="">Download the scent of Zurich</a> to 3D print at home.</p>
-    <p><a href="">Learn more about the science</a> of the cheese scent.</p>
+<div id='zurich' class='place' style='visibility: visible;'>
+  <img class='mood' id='mood-zurich' src="4681369986_55851fd15c_z.jpg" title="Limmat River, Photo CC BY-NC-ND yago1.com, Flickr.com" />
+  <h1>Zurich</h1>
+  <p><a href="https://meet.jit.si/zurich" target="_blank">Give or take a tour in Zurich</a> on the local Jitsi.</p>
+  <img class='thing' src="3158989615_ec54b532b3_c.jpg" title="Fondue, Photo CC BY-NC u m a m i, Flickr.com"/><img class='arrow' src="arrow.png"/><img class='scent' src="cheese-scent.jpg" title="Scent Molecule, Design CC BY-SA D. Chicherio"/><!-- not yet cheese, it's a component of sausage, sorry -->
+  <p><a href="cheese-scent.stl">Download the scent of Zurich</a> to 3D print at home.</p>
     <p><a href="https://de.aliexpress.com/wholesale?SearchText=zurich+souvenir" target="_blank">Order a souvenir scent</a> to match your molecule.</p>
-<</div>
+    <p><a href="#" onclick="toggle('science-zurich', 'mood-zurich');">Learn more</a> about the science of the cheese scent.</p>
+    <p class="science" id="science-zurich" style="display:none">"The smell of cheese ..." &dash; <a href="">Source</a><br/><br/><a href="/">Souvenir Scent</a> is a <a href="https://versusvirus.ch/">#VersusVirus Hackathon</a> project about virtual tourism by Laura, Gabriela, Christophe & <a href="https://twitter.com/tamberg">@tamberg</a>.</p>
+</div>
 
 <script>
+function toggle(id1, id2) {
+  var e1 = document.getElementById(id1);
+  var e2 = document.getElementById(id2);
+  if (e1.style.display === 'none') {
+    e1.style.display = 'block';
+    e2.style.display = 'none';
+  } else {
+    e1.style.display = 'none';
+    e2.style.display = 'block';
+  }
+}
+
 L.mapbox.accessToken = 'pk.eyJ1IjoidGFtYmVyZyIsImEiOiJjaXlyNjcyMDUwMDByMzNsbHBxN3drbGlzIn0.eKPAcZ4tpRv2DwkTKxs6xw';
 var map = L.mapbox.map('map', null, { zoomControl: false })
   .setView([51.5, 9.5], 5)
