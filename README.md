@@ -12,6 +12,14 @@ Laura, Gabriela, Christophe and [@tamberg](https://twitter.com/tamberg).
 - Meet locals or other visitors.
 - Get a typical scent as a souvenir.
 
+## Website
+- Visit http://souvenirscent.ch/
+
+## How it's built
+- HTML, CSS, Javascript in index.html
+- Domain from [Gandi.net](http://gandi.net/)
+- [Hosted on AWS S3](https://docs.aws.amazon.com/AmazonS3/latest/dev/WebsiteHosting.html)
+
 ## Run it on your local machine
 - Type this in a terminal
 ```
