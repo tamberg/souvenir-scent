@@ -17,6 +17,7 @@ Laura, Gabriela, Christophe and [@tamberg](https://twitter.com/tamberg).
 
 ## How it's built
 - Static HTML, CSS, Javascript
+- Maps made with [MapBox.com](https://www.mapbox.com/)
 - Domain from [Gandi.net](http://gandi.net/)
 - Hosted on [AWS S3](https://docs.aws.amazon.com/AmazonS3/latest/dev/WebsiteHosting.html)
 
