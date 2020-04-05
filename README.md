@@ -12,5 +12,5 @@ Virtually visit any place, get its scent as a souvenir.
 
 ## License
 - 3D models are licensed [CC BY-SA](https://creativecommons.org/licenses/by-sa/4.0/), G. Chicherio
-- Photos are all licensed [CC BY-NC-ND](https://creativecommons.org/) Flickr.com.
+- Photos are all licensed [CC BY-NC-ND](https://creativecommons.org/) Flickr users.
 - Source code is licensed under the [MIT license](https://tamberg.mit-license.org/)
