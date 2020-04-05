@@ -8,7 +8,7 @@
 Laura, Gabriela, Christophe and [@tamberg](https://twitter.com/tamberg).
 
 ## Idea
-Virtually visit any place, get its scent as a souvenir.
+Virtually visit a place, get its scent as a souvenir.
 
 ## License
 - 3D models are licensed [CC BY-SA](https://creativecommons.org/licenses/by-sa/4.0/) G. Chicherio.
