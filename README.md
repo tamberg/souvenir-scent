@@ -13,9 +13,11 @@ Laura, Gabriela, Christophe and [@tamberg](https://twitter.com/tamberg).
 - Get a typical scent as a souvenir.
 
 ## Run it on your local machine
-```$ git clone https://github.com/tamberg/souvenir-scent
+```
+$ git clone https://github.com/tamberg/souvenir-scent
 $ cd souvenir-scent
-$ python -m SimpleHTTPServer 8080```
+$ python -m SimpleHTTPServer 8080
+```
 
 ## License
 - 3D models are licensed [CC BY-SA](https://creativecommons.org/licenses/by-sa/4.0/) G. Chicherio.
