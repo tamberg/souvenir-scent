@@ -1,7 +1,7 @@
 # Souvenir Scent
 [Souvenir Scent](http://souvenirscent.ch/) is a [#VersusVirus Hackathon](https://versusvirus.ch/) Project
 
-<img src="souvenir.jpg" width="540"/>
+<img src="souvenir.jpg" width="420"/>
 
 ## Challenge
 > [Virtual Tourism](https://airtable.com/shrh5sZgihl4otzgQ/tbl6sM6awYPMu9XbC/viwmAhTo2VVbreodF/rec8zsRYP3fLBmaWM?blocks=hide) - It is not possible to travel, the industry is suffering and it probably will last a long time; people need distractions.
@@ -16,7 +16,7 @@ Laura, Gabriela, Christophe and [@tamberg](https://twitter.com/tamberg).
 
 ## Website
 - Visit http://souvenirscent.ch/
-<img src="souvenirscent.png" width="540"/>
+<img src="souvenirscent.png" width="640"/>
 
 ## Molecules
 - [bread-scent.stl](bread-scent.stl)
