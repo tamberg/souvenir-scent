@@ -1,4 +1,6 @@
 # Souvenir Scent
+<img src="souvenirscent.jpg" width="540"/>
+
 [Souvenir Scent](http://souvenirscent.ch/) is a [#VersusVirus Hackathon](https://versusvirus.ch/) Project
 
 ## Challenge
@@ -16,7 +18,11 @@ Laura, Gabriela, Christophe and [@tamberg](https://twitter.com/tamberg).
 - Visit http://souvenirscent.ch/
 
 ## Molecules
-<img src="49735748937_2ee96ed55e_z.jpg" width="320"/>
+- [bread-scent.stl](brad-scent.stl)
+- [forest-scent.stl](forest-scent.stl)
+- [olive-scent.stl](olive-scent.stl)
+- [sausage-scent.stl](sausage-scent.stl)
+- [sea-scent.stl](sea-scent.stl)
 
 ## How it's built
 - Static HTML, CSS, Javascript
