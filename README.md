@@ -1,5 +1,5 @@
 # Souvenir Scent
-<img src="souvenirscent.jpg" width="540"/>
+<img src="souvenirscent.png" width="540"/>
 
 [Souvenir Scent](http://souvenirscent.ch/) is a [#VersusVirus Hackathon](https://versusvirus.ch/) Project
 
