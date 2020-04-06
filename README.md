@@ -16,7 +16,7 @@ Laura, Gabriela, Christophe and [@tamberg](https://twitter.com/tamberg).
 
 ## Website
 - Visit http://souvenirscent.ch/
-    <img src="souvenirscent.png" width="540"/>
+<img src="souvenirscent.png" width="540"/>
 
 ## Molecules
 - [bread-scent.stl](bread-scent.stl)
